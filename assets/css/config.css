@@ -1,0 +1,359 @@
+/* Base */
+@font-face {
+  font-family: 'ttm-regular';
+  src: url('../font/ttm-regular.ttf');
+}
+@font-face {
+  font-family: 'ttm-demibold';
+  src: url('../font/ttm-demibold.ttf');
+}
+@font-face {
+  font-family: 'ttm-thin';
+  src: url('../font/ttm-thin.ttf');
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  -webkit-text-size-adjust: none;
+}
+mark {
+  background-color: transparent;
+  color: inherit;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-light: #ffffff;
+  --color-light-rgba: 255, 255, 255;
+  --color-grey: #d9dfde;
+  --color-grey-rgba: 217, 223, 222;
+  --color-grey-alt: #d0d4d3;
+  --color-grey-alt-rgba: 208, 212, 211;
+  --color-grey-darker: #929796;
+  --color-grey-darker-rgba: 146, 151, 150;
+  --color-ultra-dark: #141414;
+  --color-ultra-dark-rgba: 20, 20, 20;
+  --color-space-dark: #1c1c1c;
+  --color-space-dark-rgba: 28, 28, 28;
+  --color-dark: #212121;
+  --color-dark-rgba: 33, 33, 33;
+  --color-dark-alt: #292929;
+  --color-dark-alt-rgba: 41, 41, 41;
+  --color-dark-special: #303030;
+  --color-dark-special-rgba: 48, 48, 48;
+  --color-error: #cd4244;
+  --color-error-rgba: 205, 66, 68;
+  --color-warning: #da8d23;
+  --color-warning-rgba: 218, 141, 35;
+  --color-success: #00cb7b;
+  --color-success-rgba: 0, 203, 123;
+  --color-tone-primary: #f64941;
+  --color-tone-primary-rgba: 244, 67, 54;
+  --font-demibold: 'ttm-demibold';
+  --font-regular: 'ttm-regular';
+  --font-thin: 'ttm-thin';
+  --transition-fast: cubic-bezier(0.09, 1.01, 0.82, 1);
+  --transition-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --global-spacing: 8px;
+  --letter-spacing: 0.078rem;
+  --svg-stroke-thin: 0.75;
+  --svg-stroke-normal: 1.35;
+  --svg-stroke-medium: 1.8;
+  --svg-stroke-large: 2.15;
+  --font-size-xxxs: 0.625rem;
+  --font-size-xxs: 0.725rem;
+  --font-size-xs: 0.813rem;
+  --font-size-s: 0.875rem;
+  --font-size-normal: 1rem;
+  --font-size-m: 1.125rem;
+  --font-size-l: 1.25rem;
+  --font-size-xl: 1.375rem;
+  --font-size-xxl: 1.5rem;
+  --font-size-xxxl: 2rem;
+}
+
+body {
+  font-size: 16px;
+  color: var(--color-grey);
+}
+
+/* Panel */
+main {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  max-height: 500px;
+  left: 0;
+  top: 0;
+  padding: 4px;
+  gap: 8px;
+  padding: 12px 20px;
+  overflow: hidden;
+  cursor: default;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  border-radius: 6px;
+  --main-config-width: 400px;
+}
+
+main #config, main #guide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 6px;
+  background-color: #202023;
+  overflow: hidden;
+}
+
+/* Key Configuration */
+main #config {
+  width: var(--main-config-width);
+}
+
+main .title {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  color: var(--color-grey);
+  font-family: var(--font-demibold);
+  font-size: var(--font-size-l);
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+
+main .title::before {
+  position: absolute;
+  left: 0px;
+  top: 3px;
+  color: var(--color-grey);
+  font-family: var(--font-demibold);
+  font-size: var(--font-size-s);
+  text-transform: uppercase;
+  opacity: 0.45;
+}
+
+main .title.t1::before {
+  content: '01';
+}
+
+main .title.t2::before {
+  content: '02';
+}
+
+main #config #udxApiKeyInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: calc(100%);
+  color: rgba(var(--color-grey-rgba), 1);
+  background-color: var(--color-space-dark);
+  font-family: var(--font-demibold);
+  height: 45px;
+  right: 0;
+  bottom: 0px;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  appearance: none;
+  border: none;
+  outline: 0;
+  text-decoration: none;
+}
+
+main #config #udxApiKeyInput::placeholder {
+  color: rgba(var(--color-grey-rgba), 0.25);
+}
+
+main #config #save-key {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 0;
+  padding: 0 16px;
+  width: auto;
+  overflow: visible;
+  min-width: 112px;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-light);
+  font-size: var(--font-size-normal);
+  font-family: var(--font-regular);
+  background-color: var(--color-space-dark);
+  transition: all 0.15s ease;
+}
+
+main #config #save-key:hover {
+  background-color: var(--color-grey);
+  color: var(--color-tone-primary);
+}
+
+/* Guide */
+main #guide {
+  width: calc(100% - var(--main-config-width));
+}

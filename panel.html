@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uxon Dynamics</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <main>
+    <div id="frame-indicator">
+      <div class="udx-app-name">UXON DYNAMICS</div>
+      <div class="app-load-indicator display"></div>
+    </div>
+    <div id="header">
+      <div class="creatorInfo">
+        <div class="creatorPicture"></div>
+        <div class="creatorName"></div>
+        <div class="creatorGuildPicture"></div>
+        <div class="creatorGuildName"></div>
+      </div>
+      <div class="search-toggle">
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-input-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20 11v-2a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h5" /><path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M20.2 20.2l1.8 1.8" /></svg>
+      </div>
+    </div>
+    <ul id="corpus-nav">
+      <li class="nav-item active" data-nav-item="hangar">Hangar</li>
+      <li class="nav-item" data-nav-item="builds">Builds</li>
+      <li class="nav-item" data-nav-item="bioticorp">Bioticorp</li>
+      <li class="nav-item" data-nav-item="banking">Banking</li>
+    </ul>
+    <div id="corpus">
+      <div class="corpus-content active">
+        <div id="hangar"></div>
+      </div>
+      <div class="corpus-content">
+        <div id="builds"></div>
+      </div>
+      <div class="corpus-content">
+        <div id="bioticorp"></div>
+      </div>
+      <div class="corpus-content">
+        <div id="banking"></div>
+      </div>
+      <div id="app-configuration-needed">
+        CONFIG NEEDED
+      </div>
+    </div>
+  </main>
+  <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "extension_version": "1.0.0",
+  "name": "Uxon Dynamics",
+  "author": "Uxon Dynamics",
+  "description": "Configuration de l'extension Uxon Dynamics",
+  "type": "configuration",
+  "views": {
+    "config": {
+      "viewer_url": "config.html"
+    },
+    "panel": {
+      "viewer_url": "panel.html"
+    }
+  },
+  "permissions": ["broadcaster_configure"],
+  "features": {
+    "configuration_version": "1.0.0"
+  }
+}
